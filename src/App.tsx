@@ -4,6 +4,7 @@ import ExpensesPage from './pages/ExpensesPage';
 import AddPage from './pages/AddPage';
 import CalendarPage from './pages/CalendarPage';
 import SettingsPage from './pages/SettingsPage';
+import ErrorPage from './pages/ErrorPage';
 import Layout from './components/Layout';
 import { routerConstants } from './shared/constants/routes';
 
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
   {
     path: `${HOME.path}`,
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         element: <HomePage />,
