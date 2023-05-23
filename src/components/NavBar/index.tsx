@@ -1,5 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import { routerConstants } from '../../shared/constants/routes';
+import HomeIcon from '../../assets/icons/HomeIcon';
+import CardIcon from '../../assets/icons/CardIcon';
+import AddIcon from '../../assets/icons/AddIcon';
+import CalendarIcon from '../../assets/icons/CalendarIcon';
+import SettingsIcon from '../../assets/icons/SettingsIcon';
 
 const { HOME, EXPENSES, ADD, CALENDAR, SETTINGS } = routerConstants;
 
@@ -9,19 +14,29 @@ const NavBar = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to={HOME.path}>{HOME.name}</NavLink>
+            <NavLink to={HOME.path}>
+              <HomeIcon />
+            </NavLink>
           </li>
           <li>
-            <NavLink to={EXPENSES.path}>{EXPENSES.name}</NavLink>
+            <NavLink to={EXPENSES.path}>
+              <CardIcon />
+            </NavLink>
           </li>
           <li>
-            <NavLink to={ADD.path}>{ADD.name}</NavLink>
+            <NavLink to={ADD.path}>
+              <AddIcon />
+            </NavLink>
           </li>
           <li>
-            <NavLink to={CALENDAR.path}>{CALENDAR.name}</NavLink>
+            <NavLink to={CALENDAR.path}>
+              <CalendarIcon />
+            </NavLink>
           </li>
           <li>
-            <NavLink to={SETTINGS.path}>{SETTINGS.name}</NavLink>
+            <NavLink to={SETTINGS.path}>
+              <SettingsIcon />
+            </NavLink>
           </li>
         </ul>
       </nav>
