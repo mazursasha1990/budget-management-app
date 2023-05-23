@@ -1,0 +1,9 @@
+.navBar {
+  width: 100%;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

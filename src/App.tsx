@@ -5,7 +5,7 @@ import AddPage from './pages/AddPage';
 import CalendarPage from './pages/CalendarPage';
 import SettingsPage from './pages/SettingsPage';
 import ErrorPage from './pages/ErrorPage';
-import Layout from './components/Layout';
+import Layout from './components/Layout/Layout';
 import { routerConstants } from './shared/constants/routes';
 
 const { HOME, EXPENSES, ADD, CALENDAR, SETTINGS } = routerConstants;

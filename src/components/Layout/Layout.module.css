@@ -1,3 +1,23 @@
 .container {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  width: 414px;
+  max-width: 414px;
+  max-height: 896px;
+}
+header {
+  height: 71px;
+  padding: 0 27px;
+}
+main {
+  height: 735px;
+  padding: 0 27px;
+}
+footer {
+  height: 90px;
+  padding: 0 27px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
 }
