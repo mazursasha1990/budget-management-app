@@ -6,14 +6,17 @@
   max-width: 414px;
   max-height: 896px;
 }
+
 header {
-  height: 71px;
+  height: 118px;
   padding: 0 27px;
 }
+
 main {
   height: 735px;
   padding: 0 27px;
 }
+
 footer {
   height: 90px;
   padding: 0 27px;

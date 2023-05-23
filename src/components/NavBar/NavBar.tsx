@@ -4,13 +4,14 @@ import HomeIcon from '../../assets/icons/HomeIcon';
 import CardIcon from '../../assets/icons/CardIcon';
 import AddIcon from '../../assets/icons/AddIcon';
 import CalendarIcon from '../../assets/icons/CalendarIcon';
+import { FC } from 'react';
 import SettingsIcon from '../../assets/icons/SettingsIcon';
 
 import styles from './NavBar.module.css';
 
 const { HOME, EXPENSES, ADD, CALENDAR, SETTINGS } = routerConstants;
 
-const NavBar = () => {
+const NavBar: FC = () => {
   return (
     <nav className={styles.navBar}>
       <ul className={styles.navList}>
