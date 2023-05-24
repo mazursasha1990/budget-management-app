@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import BellIcon from '../../assets/icons/BellIcon';
-import styles from './Header.module.css';
+import { Box, List, ListItem, Typography } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import { useLocation } from 'react-router-dom';
 import { routerConstants } from '../../shared/constants/routes';
@@ -22,16 +22,56 @@ const Header: FC = () => {
   };
 
   return (
-    <div className={styles.header}>
-      <Avatar
-        alt={userData.name}
-        src={userData.photo}
-        variant="square"
-        sx={{ width: 43, height: 43 }}
-      />
-      <h1 className={styles.headerName}>{getRouteNameByPath(pathname)}</h1>
-      <BellIcon />
-    </div>
+    <Box
+      mt={'42px'}
+      sx={{
+        width: '358px',
+      }}
+    >
+      <List
+        disablePadding
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}
+      >
+        <ListItem
+          disablePadding
+          sx={{
+            width: 'auto',
+          }}
+        >
+          <Avatar
+            alt={userData.name}
+            src={userData.photo}
+            variant="square"
+            sx={{ width: 43, height: 43 }}
+          />
+        </ListItem>
+        <ListItem
+          disablePadding
+          sx={{
+            width: 'auto',
+          }}
+        >
+          <Typography
+            variant="h1"
+            sx={{ fontWeight: '500', fontSize: '24px', lineHeight: '28px' }}
+          >
+            {getRouteNameByPath(pathname)}
+          </Typography>
+        </ListItem>
+        <ListItem
+          disablePadding
+          sx={{
+            width: 'auto',
+          }}
+        >
+          <BellIcon />
+        </ListItem>
+      </List>
+    </Box>
   );
 };
 

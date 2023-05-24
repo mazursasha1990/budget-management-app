@@ -7,8 +7,7 @@ import CalendarIcon from '../../assets/icons/CalendarIcon';
 import SettingsIcon from '../../assets/icons/SettingsIcon';
 import AddIcon from '@mui/icons-material/Add';
 
-import styles from './NavBar.module.css';
-import { Fab } from '@mui/material';
+import { Box, Fab, List, ListItem } from '@mui/material';
 
 const {
   HOME: { path: homePath },
@@ -24,49 +23,90 @@ const NavBar: FC = () => {
   const lightGrey = '#A3A3A3';
 
   return (
-    <nav className={styles.navBar}>
-      <ul className={styles.navList}>
-        <li>
-          <NavLink to={homePath}>
-            <HomeIcon
-              sx={{ color: homePath === pathname ? orange : lightGrey }}
-            />
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to={expensesPath}>
-            <CardIcon
-              sx={{ color: expensesPath === pathname ? orange : lightGrey }}
-            />
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to={addPath}>
-            <Fab color="warning" aria-label="add">
-              <AddIcon />
-            </Fab>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to={calendarPath}>
-            <CalendarIcon
-              sx={{
-                stroke: calendarPath === pathname ? orange : lightGrey,
-              }}
-            />
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to={settingsPath}>
-            <SettingsIcon
-              sx={{
-                stroke: settingsPath === pathname ? orange : lightGrey,
-              }}
-            />
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
+    <Box
+      sx={{
+        width: '358px',
+      }}
+    >
+      <nav aria-label="navigation">
+        <List
+          disablePadding
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            // width: 'auto',
+          }}
+        >
+          <ListItem
+            disablePadding
+            sx={{
+              width: 'auto',
+            }}
+          >
+            <NavLink to={homePath}>
+              <HomeIcon
+                sx={{ color: homePath === pathname ? orange : lightGrey }}
+              />
+            </NavLink>
+          </ListItem>
+          <ListItem
+            disablePadding
+            sx={{
+              width: 'auto',
+            }}
+          >
+            <NavLink to={expensesPath}>
+              <CardIcon
+                sx={{
+                  color: expensesPath === pathname ? orange : lightGrey,
+                }}
+              />
+            </NavLink>
+          </ListItem>
+          <ListItem
+            disablePadding
+            sx={{
+              width: 'auto',
+            }}
+          >
+            <NavLink to={addPath}>
+              <Fab color="warning" aria-label="add">
+                <AddIcon />
+              </Fab>
+            </NavLink>
+          </ListItem>
+          <ListItem
+            disablePadding
+            sx={{
+              width: 'auto',
+            }}
+          >
+            <NavLink to={calendarPath}>
+              <CalendarIcon
+                sx={{
+                  stroke: calendarPath === pathname ? orange : lightGrey,
+                }}
+              />
+            </NavLink>
+          </ListItem>
+          <ListItem
+            disablePadding
+            sx={{
+              width: 'auto',
+            }}
+          >
+            <NavLink to={settingsPath}>
+              <SettingsIcon
+                sx={{
+                  stroke: settingsPath === pathname ? orange : lightGrey,
+                }}
+              />
+            </NavLink>
+          </ListItem>
+        </List>
+      </nav>
+    </Box>
   );
 };
 
