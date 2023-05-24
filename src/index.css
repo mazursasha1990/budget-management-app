@@ -1,5 +1,10 @@
 :root {
   font-family: 'Roboto', sans-serif;
+
+  --primary-orange-color: #ff643b;
+  --primary-blue-color: #8234f8;
+  --primary-text-color: #a3a3a3;
+  --primary-text-dark-color: #615c5c;
 }
 
 body {
