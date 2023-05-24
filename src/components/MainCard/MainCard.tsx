@@ -41,8 +41,7 @@ const MainCard: FC = () => {
             sx={{ position: 'absolute', top: '20px', right: '23px' }}
           />
           <Typography
-            // mt={'24px'}
-            variant="h4"
+            variant="h3"
             sx={{ fontWeight: '500', fontSize: '18px', lineHeight: '21px' }}
           >
             Total Balance
