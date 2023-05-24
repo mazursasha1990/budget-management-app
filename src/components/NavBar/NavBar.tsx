@@ -3,11 +3,12 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { routerConstants } from '../../shared/constants/routes';
 import HomeIcon from '../../assets/icons/HomeIcon';
 import CardIcon from '../../assets/icons/CardIcon';
-import AddIcon from '../../assets/icons/AddIcon';
 import CalendarIcon from '../../assets/icons/CalendarIcon';
 import SettingsIcon from '../../assets/icons/SettingsIcon';
+import AddIcon from '@mui/icons-material/Add';
 
 import styles from './NavBar.module.css';
+import { Fab } from '@mui/material';
 
 const {
   HOME: { path: homePath },
@@ -41,7 +42,9 @@ const NavBar: FC = () => {
         </li>
         <li>
           <NavLink to={addPath}>
-            <AddIcon />
+            <Fab color="warning" aria-label="add">
+              <AddIcon />
+            </Fab>
           </NavLink>
         </li>
         <li>
