@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import BellIcon from '../../assets/icons/BellIcon';
+import BellIcon from '../../icons/BellIcon';
 import { Badge, Box, List, ListItem, Typography } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import { useLocation } from 'react-router-dom';

@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { routerConstants } from '../../shared/constants/routes';
-import HomeIcon from '../../assets/icons/HomeIcon';
-import CardIcon from '../../assets/icons/CardIcon';
-import CalendarIcon from '../../assets/icons/CalendarIcon';
-import SettingsIcon from '../../assets/icons/SettingsIcon';
+import HomeIcon from '../../icons/HomeIcon';
+import CardIcon from '../../icons/CardIcon';
+import CalendarIcon from '../../icons/CalendarIcon';
+import SettingsIcon from '../../icons/SettingsIcon';
 import AddIcon from '@mui/icons-material/Add';
 
 import { Box, Fab, List, ListItem } from '@mui/material';
