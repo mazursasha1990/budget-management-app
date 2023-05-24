@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import BellIcon from '../../assets/icons/BellIcon';
-import { Box, List, ListItem, Typography } from '@mui/material';
+import { Badge, Box, List, ListItem, Typography } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import { useLocation } from 'react-router-dom';
 import { routerConstants } from '../../shared/constants/routes';
@@ -68,7 +68,15 @@ const Header: FC = () => {
             width: 'auto',
           }}
         >
-          <BellIcon />
+          <Badge
+            color="warning"
+            overlap="circular"
+            badgeContent=" "
+            variant="dot"
+            sx={{ '& .MuiBadge-badge': { width: '10px', height: '10px' } }}
+          >
+            <BellIcon />
+          </Badge>
         </ListItem>
       </List>
     </Box>
