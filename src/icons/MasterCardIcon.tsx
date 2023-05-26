@@ -7,7 +7,7 @@ const MasterCardIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle cx="32.5" cy="14.5" r="14.5" fill="#FF9F00" />
-    <circle cx="14.5" cy="14.5" r="14.5" fill="#FF0015" fill-opacity="0.84" />
+    <circle cx="14.5" cy="14.5" r="14.5" fill="#FF0015" fillOpacity="0.84" />
   </svg>
 );
 
